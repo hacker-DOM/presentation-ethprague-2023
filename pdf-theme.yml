@@ -1,0 +1,101 @@
+# Ref: https://docs.asciidoctor.org/pdf-converter/latest/theme/keys/
+# The items are listed in roughly order of:
+# https://github.com/asciidoctor/asciidoctor-pdf/blob/main/data/themes/base-theme.yml
+# Default theme:
+# https://github.com/asciidoctor/asciidoctor-pdf/tree/main/data/themes/default-theme.yml
+extends: default
+page:
+  layout: portrait
+  margin: [0.7in, 0.7in, 0.7in, 0.7in]
+  size: A4
+  numbering:
+    start-at: cover
+base:
+  font-color: #000000
+  # font-family: SpaceGrotesk
+  font-size: 11.5
+  line-height-length: 17
+  line-height: 1.5
+  align: left
+role:
+  italic:
+    font-size: 10
+    font-style: italic
+  header-link:
+    font-color: #000
+    text-decoration: none
+link:
+  # font-color: #2020c0
+  text-decoration: underline
+heading:
+  h2:
+    font-color: #999
+title-page:
+  # background-image: image:assets/title-page-background-landscape.png[fit=none,pdfwidth=100%]
+  align: center
+  title:
+    font-size: 30
+    # font-color: #fff
+    top: 40%
+  subtitle:
+    font-size: 18
+    # font-color: #fff
+    font-style: italic
+  authors:
+    font-size: 14
+    # font-color: #fff
+  logo:
+    align: left
+    # image: image:assets/abch-logo-white.png[pdfwidth=40%, opts=align-to-page]
+    top: 0vh
+    margin-left: 0
+code:
+  highlight-background-color: #FFFFFF
+table:
+  border-color: #fff
+  caption-side: bottom
+  caption-align: center
+  head:
+    background-color: #0000FF
+    font-color: #FFF
+  cell:
+    padding: [2pt, 7pt, 2pt, 7pt]
+toc:
+  line-height: 1.7
+footnotes:
+  font-size: 10
+footer:
+  height: $base-line-height-length * 3
+  line-height: 1
+  border-width: 0
+  font-size: $base-font-size
+  font-color: #cccccc
+  recto:
+    # Note: We need to override recto_left_content
+    # (It shows page number by default.)
+    left:
+      content:
+    right:
+      content: '{page-number} of {page-count}'
+  verso:
+    left:
+      content:
+    right:
+      content: $footer-recto-right-content
+# Not present in `base theme`:
+# font:
+#   catalog:
+#     merge: true
+#     SpaceGrotesk:
+#       normal: SpaceGrotesk.ttf
+#       italic: SpaceMono_Italic.ttf
+#       bold: SpaceGrotesk_Bold.ttf
+#       bold_italic: SpaceMono_Bold_Italic.ttf
+#   fallbacks:
+#     - Noto Serif
+codespan:
+  font-family: Courier
+  font-size: 85%
+  font-color: #901020
+running-content:
+  start-at: toc

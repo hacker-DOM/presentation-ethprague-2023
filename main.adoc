@@ -1,0 +1,29 @@
+// header
+:doctype: article
+:toc-title: Contents
+:toc: macro
+:rouge-style: pastie
+:source-highlighter: rouge
+:pdf-page-size: 9in x 6in
+:title-page:
+:pdf-theme: pdf-theme.yml
+# How I Audit: EthPrague 2023
+Dominik Teiml
+:toclevels: 1
+
+// non-header-builtins
+:attribute-missing: warn
+:listing-caption: Listing
+:section-refsig:
+:sectnumlevels: 2
+:xrefstyle: short
+
+// variables
+:abch: https://github.com/Ackee-Blockchain[Ackee Blockchain]
+
+// document
+toc::[]
+
+:leveloffset: 1
+
+include::./slides.adoc[]
