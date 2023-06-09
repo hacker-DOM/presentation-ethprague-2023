@@ -7,7 +7,7 @@
 :pdf-page-size: 9in x 6in
 :title-page:
 :pdf-theme: pdf-theme.yml
-# How I Audit: EthPrague 2023
+# bit.ly/howiaudit
 Dominik Teiml
 :toclevels: 1
 
