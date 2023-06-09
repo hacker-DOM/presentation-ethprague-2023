@@ -7,8 +7,8 @@
 :pdf-page-size: 9in x 6in
 :title-page:
 :pdf-theme: pdf-theme.yml
-# bit.ly/howiaudit
-Dominik Teiml
+# bit.ly/howiaudit: EthPrague 2023
+Tw: __hackerdom__
 :toclevels: 1
 
 // non-header-builtins
