@@ -49,6 +49,7 @@ cd scratch
 gh repo clone uniswap/v3-core
 cd v3-core
 woke dash contracts
+open ./.woke-dash/latest/index.html
 ```
 
 Let's try some more!
@@ -96,6 +97,7 @@ Then, just run:
 
 ```zsh
 woke dash src
+open ./.woke-dash/latest/index.html
 ```
 
 To try the language server:
@@ -143,4 +145,4 @@ To try the language server:
 
 ## Tips
 
-1. Due to our cli library (`click`), you need to put options before the command.
+<!-- 1. Due to our cli library (`click`), you need to put options before the command. -->

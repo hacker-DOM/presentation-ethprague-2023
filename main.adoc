@@ -8,7 +8,7 @@
 :title-page:
 :pdf-theme: pdf-theme.yml
 # bit.ly/howiaudit: EthPrague 2023
-lnk.bio/hacker-dom
+Dominik Teiml
 :toclevels: 1
 
 // non-header-builtins
